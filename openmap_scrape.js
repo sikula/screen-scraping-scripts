@@ -34,38 +34,6 @@ var casper  = require('casper').create({
 })();
 
 
-var Mapper  = (function() {
-
-    /* Constructor */
-    function Mapper() {
-        /* Instance Variables */
-        this.city   = casper.cli.get("city");
-    };
-
-    // public:
-        /* Get the city name from the command line argument */
-        Mapper.prototype.get_city       = function() {
-            return this.city;
-        };
-
-        /* Retrieve the latitude of a city from  http://dbsgeo.com/latlon/ */
-        Mapper.prototype.get_lat_lon    = function(city) {
-
-        };
-
-        /* Return the latitude only */
-        Mapper.prototype.get_lat        = function() {
-
-        };
-
-        /* Return the longitude only */
-        Mapper.prototype.get_long       = function() {
-
-        };
-
-    return Mapper;
-
-})();
 
 /* We begin by injecting ZeptoJS into our current DOM context */
 casper.start(webpage, function() {
