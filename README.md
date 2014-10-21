@@ -1,4 +1,3 @@
-interesting-scripts
+screen-scraping-scripts
 ===================
-
-random scripts to do random things which I felt like doing
+Some javascript programs that I wrote using the CasperJS framework
