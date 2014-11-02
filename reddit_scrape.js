@@ -1,8 +1,8 @@
 /*
  * ==================================================================================
  * AUTHOR       : sikula
- * VERSION      : 1.0.5
- * LAST UPDATE  : Mon Oct 20
+ * VERSION      : 1.0.6
+ * LAST UPDATE  : Sun Nov 1
  * DESCRIPTION  : A javascript program using CasperJS to extract the
  *                title, url, and time posted of the posts from a specified
  *                subreddit page.
