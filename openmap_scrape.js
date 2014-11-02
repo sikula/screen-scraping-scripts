@@ -1,13 +1,13 @@
 /* ==================================================================================
  * AUTHOR       : sikula
- * VERSION      : 1.0.5
- * LAST UPDATE  : Tue Oct 21
+ * VERSION      : 1.0.6
+ * LAST UPDATE  : Sun Nov 1
  * DESCRIPTION  : A javascript program using CasperJS to save a map, from
  *                OpenStreet Maps as an image. The program can easily manipulate the
  *                map to create custom map-images.
  *
  * NOTES        : Keep the viewport size below 2000 x 2000 otherwise it takes a long
- *                time to get the picture.
+ *                time to render the picture. 
  * ==================================================================================
  */
 

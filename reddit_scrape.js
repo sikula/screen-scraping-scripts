@@ -30,7 +30,7 @@ var posts   = [];
 
 (function() {
     var subred  = casper.cli.get("subred");
-    if( !casper.cli.has("subred") {
+    if( !casper.cli.has("subred")) {
         webpage = "http://www.reddit.com/";
     } else {
         webpage = "http://www.reddit.com/r/" + subred;
@@ -50,7 +50,7 @@ var Formatter   = (function() {
         /* Format for titles */
         Formatter.prototype.title   = function(text) {
             return colorizer.format(text, {
-                fg:     'green',
+                fg:     'blue',
                 bold:   false,
             });
         };
@@ -58,7 +58,7 @@ var Formatter   = (function() {
         /* Format for links */
         Formatter.prototype.links   = function(text) {
             return colorizer.format(text, {
-                fg:     'magenta',
+                fg:     'white',
                 bold:   false,
             });
         };
@@ -141,7 +141,8 @@ casper.start(webpage, function() {
 
 casper.run(function() {
     var format  = new Formatter();
-    for( i = 1 ; i <= 10; i++ ) {
+    var number  = casper.cli.get("num") || 10;
+    for( i = 1 ; i <= number; i++ ) {
         this.echo(format.title("[ " + i + " ] " + posts[i][0] + " : " + times[i]));
         this.echo(format.links("          "     + posts[i][1]));
     };
